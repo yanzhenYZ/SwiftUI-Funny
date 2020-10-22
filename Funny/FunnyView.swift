@@ -9,7 +9,12 @@ import SwiftUI
 
 struct FunnyView: View {
     var body: some View {
-        Text("Hello, Funny!")
+        VStack {
+            FunnyAppRowView()
+                .frame(height: 85)
+            
+            Spacer()
+        }
     }
 }
 
