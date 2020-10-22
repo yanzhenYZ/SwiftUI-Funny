@@ -13,16 +13,20 @@ struct TimeView: View {
     @State private var memoryProgress: CGFloat = 0
 
     var body: some View {
-        HStack {
-            Spacer()
-            TimeCircleView(title: "CPU", subTitle: TimeManager.manager.cpuUsageStr, progress: TimeManager.manager.cpuUsage)
-            Spacer()
-            TimeCircleView(title: "内存", subTitle: TimeManager.manager.memoryUsageStr, progress: TimeManager.manager.memoryUsage)
-            Spacer()
-            TimeCircleView(title: TimeManager.manager.wifiTitle, subTitle: TimeManager.manager.wifiSubTitle)
-            Spacer()
+        ZStack {
+            Image("Ais")
+                .resizable()
+            
+            HStack {
+                Spacer()
+                TimeCircleView(title: "CPU", subTitle: TimeManager.manager.cpuUsageStr, progress: TimeManager.manager.cpuUsage)
+                Spacer()
+                TimeCircleView(title: "内存", subTitle: TimeManager.manager.memoryUsageStr, progress: TimeManager.manager.memoryUsage)
+                Spacer()
+                TimeCircleView(title: TimeManager.manager.wifiTitle, subTitle: TimeManager.manager.wifiSubTitle)
+                Spacer()
+            }
         }
-        
     }
 }
 
