@@ -20,6 +20,9 @@
 		9B40962625413B740098DD30 /* Time.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9B40962225413B720098DD30 /* Time.intentdefinition */; };
 		9B40962725413B740098DD30 /* Time.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9B40962225413B720098DD30 /* Time.intentdefinition */; };
 		9B40962A25413B740098DD30 /* TimeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B40961925413B720098DD30 /* TimeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9B40963425416BF60098DD30 /* TimeCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40963325416BF60098DD30 /* TimeCircleView.swift */; };
+		9B40963A25416C5C0098DD30 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40963925416C5C0098DD30 /* TimeView.swift */; };
+		9B40963E25416C790098DD30 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40963D25416C790098DD30 /* TimeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		9B40962225413B720098DD30 /* Time.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Time.intentdefinition; sourceTree = "<group>"; };
 		9B40962325413B740098DD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B40962525413B740098DD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B40963325416BF60098DD30 /* TimeCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircleView.swift; sourceTree = "<group>"; };
+		9B40963925416C5C0098DD30 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		9B40963D25416C790098DD30 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				9B40962025413B720098DD30 /* Time.swift */,
+				9B40963925416C5C0098DD30 /* TimeView.swift */,
+				9B40963325416BF60098DD30 /* TimeCircleView.swift */,
+				9B40963D25416C790098DD30 /* TimeManager.swift */,
 				9B40962225413B720098DD30 /* Time.intentdefinition */,
 				9B40962325413B740098DD30 /* Assets.xcassets */,
 				9B40962525413B740098DD30 /* Info.plist */,
@@ -258,7 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B40962125413B720098DD30 /* Time.swift in Sources */,
+				9B40963425416BF60098DD30 /* TimeCircleView.swift in Sources */,
 				9B40962625413B740098DD30 /* Time.intentdefinition in Sources */,
+				9B40963E25416C790098DD30 /* TimeManager.swift in Sources */,
+				9B40963A25416C5C0098DD30 /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,11 +465,16 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R57G8CYRFG;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/library/YZDevice/framework$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = Time/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					YZIPhoneDevice,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanzhen.Funny.Time;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,11 +491,16 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R57G8CYRFG;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/library/YZDevice/framework$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = Time/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					YZIPhoneDevice,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanzhen.Funny.Time;
 				PRODUCT_NAME = "$(TARGET_NAME)";

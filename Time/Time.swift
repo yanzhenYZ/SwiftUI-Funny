@@ -7,44 +7,40 @@
 
 import WidgetKit
 import SwiftUI
-import Intents
 
-struct Provider: IntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+struct TimeProvider: TimelineProvider {
+    func placeholder(in context: Context) -> TimeEntry {//启动
+        return TimeEntry(date: Date())
     }
-
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+    // 添加小组件时显示的内容
+    func getSnapshot(in context: Context, completion: @escaping (TimeEntry) -> Void) {
+        // 取数据
+        let entry = TimeEntry(date: Date())
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+    func getTimeline(in context: Context, completion: @escaping (Timeline<TimeEntry>) -> Void) {
+        let entry = TimeEntry(date: Date())
+        let timeline = Timeline(entries: [entry], policy: .atEnd)
+        completion(timeline)//数据传输--001
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct PlaceholderView : View {
+    var body: some View {
+        Text("Loading...")
+    }
+}
+
+struct TimeEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationIntent
+    let manager = TimeManager.manager
 }
 
 struct TimeEntryView : View {
-    var entry: Provider.Entry
-
+    let entry: TimeEntry
     var body: some View {
-        Text(entry.date, style: .time)
+        TimeView()
     }
 }
 
@@ -52,18 +48,19 @@ struct TimeEntryView : View {
 struct Time: Widget {
     let kind: String = "Time"
 
-    var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+    var body: some WidgetConfiguration {//数据接收--001
+        StaticConfiguration(kind: kind, provider: TimeProvider()) { entry in
             TimeEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Funny")
+        .description("看到你也得不到")
+        .supportedFamilies([.systemMedium])
     }
 }
 
-struct Time_Previews: PreviewProvider {
+struct Today_Previews: PreviewProvider {
     static var previews: some View {
-        TimeEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        TimeEntryView(entry: TimeEntry(date: Date()))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
