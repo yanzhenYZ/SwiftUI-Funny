@@ -27,7 +27,7 @@ class TimeManager {
             
             let availableSize = YZDevice.getAvailableDiskSize()
             let totalSize = YZDevice.getTotalDiskSize()
-            self?.memoryUsageStr = String(format: "%.1fG/%.1fG", CGFloat(availableSize) / 1024.0 / 1024 / 1024,CGFloat(totalSize) / 1024.0 / 1024 / 1024)
+            self?.memoryUsageStr = String(format: "%.fG/%.fG", CGFloat(availableSize) / 1024.0 / 1024 / 1024,CGFloat(totalSize) / 1024.0 / 1024 / 1024)
             self?.memoryUsage = 1 - CGFloat(availableSize) / CGFloat(totalSize)
             
             self?.reloadAllTimelines()

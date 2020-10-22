@@ -145,8 +145,8 @@
 			children = (
 				9B40962025413B720098DD30 /* Time.swift */,
 				9B40963925416C5C0098DD30 /* TimeView.swift */,
-				9B40963325416BF60098DD30 /* TimeCircleView.swift */,
 				9B40963D25416C790098DD30 /* TimeManager.swift */,
+				9B40963325416BF60098DD30 /* TimeCircleView.swift */,
 				9B40962225413B720098DD30 /* Time.intentdefinition */,
 				9B40962325413B740098DD30 /* Assets.xcassets */,
 				9B40962525413B740098DD30 /* Info.plist */,

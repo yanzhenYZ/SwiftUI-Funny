@@ -19,7 +19,7 @@ struct TimeView: View {
             Spacer()
             TimeCircleView(title: "内存", subTitle: TimeManager.manager.memoryUsageStr, progress: TimeManager.manager.memoryUsage)
             Spacer()
-            TimeCircleView(title: TimeManager.manager.wifiTitle, subTitle: TimeManager.manager.wifiSubTitle, progress: 0)
+            TimeCircleView(title: TimeManager.manager.wifiTitle, subTitle: TimeManager.manager.wifiSubTitle)
             Spacer()
         }
         

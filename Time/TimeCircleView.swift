@@ -14,7 +14,7 @@ private let CWIDTH: CGFloat = 85
 struct TimeCircleView: View {
     var title: String
     var subTitle: String
-    var progress: CGFloat
+    var progress: CGFloat = 0
     var body: some View {
         ZStack {
             Circle()
