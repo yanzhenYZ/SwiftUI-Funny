@@ -19,11 +19,11 @@ struct TimeView: View {
             
             HStack {
                 Spacer()
-                TimeCircleView(title: "CPU", subTitle: TimeManager.manager.cpuUsageStr, progress: TimeManager.manager.cpuUsage)
+                TimeCircleView(title: "CPU", subTitle: FTManager.cpuUsageStr, progress: FTManager.cpuUsage)
                 Spacer()
-                TimeCircleView(title: "内存", subTitle: TimeManager.manager.memoryUsageStr, progress: TimeManager.manager.memoryUsage)
+                TimeCircleView(title: "内存", subTitle: FTManager.memoryUsageStr, progress: FTManager.memoryUsage)
                 Spacer()
-                TimeCircleView(title: TimeManager.manager.wifiTitle, subTitle: TimeManager.manager.wifiSubTitle)
+                TimeCircleView(title: FTManager.wifiTitle, subTitle: FTManager.wifiSubTitle)
                 Spacer()
             }
         }

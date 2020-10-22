@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64BCB23F3C100191BC84341D /* Pods_Funny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B709E00195ACB70F3B0379 /* Pods_Funny.framework */; };
 		9B4095FC254139790098DD30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4095FB254139790098DD30 /* AppDelegate.swift */; };
 		9B4095FE254139790098DD30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4095FD254139790098DD30 /* SceneDelegate.swift */; };
 		9B4096022541397B0098DD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4096012541397B0098DD30 /* Assets.xcassets */; };
@@ -23,6 +24,9 @@
 		9B40963A25416C5C0098DD30 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40963925416C5C0098DD30 /* TimeView.swift */; };
 		9B40963E25416C790098DD30 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40963D25416C790098DD30 /* TimeManager.swift */; };
 		9B4096502541762D0098DD30 /* FunnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40964F2541762D0098DD30 /* FunnyView.swift */; };
+		9B409661254179A20098DD30 /* FunnyHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409660254179A20098DD30 /* FunnyHttp.swift */; };
+		9B409667254179CB0098DD30 /* FunnySQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409666254179CB0098DD30 /* FunnySQLite.swift */; };
+		EA246C0E39516C33925850C9 /* Pods_TimeExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		41C8AA449B0D0743DA54B801 /* Pods-Funny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Funny.debug.xcconfig"; path = "Target Support Files/Pods-Funny/Pods-Funny.debug.xcconfig"; sourceTree = "<group>"; };
+		51FF3DC6257C32BF75ED3E64 /* Pods-TimeExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeExtension.release.xcconfig"; path = "Target Support Files/Pods-TimeExtension/Pods-TimeExtension.release.xcconfig"; sourceTree = "<group>"; };
+		58B709E00195ACB70F3B0379 /* Pods_Funny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Funny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D85F5E45AFD0CE4F224D5F /* Pods-Funny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Funny.release.xcconfig"; path = "Target Support Files/Pods-Funny/Pods-Funny.release.xcconfig"; sourceTree = "<group>"; };
 		9B4095F8254139790098DD30 /* Funny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Funny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4095FB254139790098DD30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B4095FD254139790098DD30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +76,10 @@
 		9B40963925416C5C0098DD30 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		9B40963D25416C790098DD30 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		9B40964F2541762D0098DD30 /* FunnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyView.swift; sourceTree = "<group>"; };
+		9B409660254179A20098DD30 /* FunnyHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyHttp.swift; sourceTree = "<group>"; };
+		9B409666254179CB0098DD30 /* FunnySQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySQLite.swift; sourceTree = "<group>"; };
+		B92A0FCE90B69F221D21770F /* Pods-TimeExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeExtension.debug.xcconfig"; path = "Target Support Files/Pods-TimeExtension/Pods-TimeExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64BCB23F3C100191BC84341D /* Pods_Funny.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +97,24 @@
 			files = (
 				9B40961E25413B720098DD30 /* SwiftUI.framework in Frameworks */,
 				9B40961C25413B720098DD30 /* WidgetKit.framework in Frameworks */,
+				EA246C0E39516C33925850C9 /* Pods_TimeExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D8D0CBFAD479EE22308E9E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41C8AA449B0D0743DA54B801 /* Pods-Funny.debug.xcconfig */,
+				83D85F5E45AFD0CE4F224D5F /* Pods-Funny.release.xcconfig */,
+				B92A0FCE90B69F221D21770F /* Pods-TimeExtension.debug.xcconfig */,
+				51FF3DC6257C32BF75ED3E64 /* Pods-TimeExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9B4095EF254139790098DD30 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +122,7 @@
 				9B40961F25413B720098DD30 /* Time */,
 				9B40961A25413B720098DD30 /* Frameworks */,
 				9B4095F9254139790098DD30 /* Products */,
+				7D8D0CBFAD479EE22308E9E6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +141,7 @@
 				9B4095FB254139790098DD30 /* AppDelegate.swift */,
 				9B4095FD254139790098DD30 /* SceneDelegate.swift */,
 				9B40964F2541762D0098DD30 /* FunnyView.swift */,
+				9B40965F254179770098DD30 /* Tools */,
 				9B4096012541397B0098DD30 /* Assets.xcassets */,
 				9B4096062541397B0098DD30 /* LaunchScreen.storyboard */,
 				9B4096092541397B0098DD30 /* Info.plist */,
@@ -136,6 +163,8 @@
 			children = (
 				9B40961B25413B720098DD30 /* WidgetKit.framework */,
 				9B40961D25413B720098DD30 /* SwiftUI.framework */,
+				58B709E00195ACB70F3B0379 /* Pods_Funny.framework */,
+				BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +183,15 @@
 			path = Time;
 			sourceTree = "<group>";
 		};
+		9B40965F254179770098DD30 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9B409660254179A20098DD30 /* FunnyHttp.swift */,
+				9B409666254179CB0098DD30 /* FunnySQLite.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,10 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B40960C2541397B0098DD30 /* Build configuration list for PBXNativeTarget "Funny" */;
 			buildPhases = (
+				2AFCB67BE980307DDEBA3BAC /* [CP] Check Pods Manifest.lock */,
 				9B4095F4254139790098DD30 /* Sources */,
 				9B4095F5254139790098DD30 /* Frameworks */,
 				9B4095F6254139790098DD30 /* Resources */,
 				9B40962B25413B740098DD30 /* Embed App Extensions */,
+				6AA19B74478534A7154AAE1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B40962E25413B740098DD30 /* Build configuration list for PBXNativeTarget "TimeExtension" */;
 			buildPhases = (
+				3D7EFF49FDBE0A11B370131A /* [CP] Check Pods Manifest.lock */,
 				9B40961525413B720098DD30 /* Sources */,
 				9B40961625413B720098DD30 /* Frameworks */,
 				9B40961725413B720098DD30 /* Resources */,
@@ -250,6 +291,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AFCB67BE980307DDEBA3BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Funny-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D7EFF49FDBE0A11B370131A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA19B74478534A7154AAE1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Funny/Pods-Funny-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Funny/Pods-Funny-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Funny/Pods-Funny-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B4095F4254139790098DD30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,7 +362,9 @@
 			files = (
 				9B4095FC254139790098DD30 /* AppDelegate.swift in Sources */,
 				9B4096502541762D0098DD30 /* FunnyView.swift in Sources */,
+				9B409661254179A20098DD30 /* FunnyHttp.swift in Sources */,
 				9B40962725413B740098DD30 /* Time.intentdefinition in Sources */,
+				9B409667254179CB0098DD30 /* FunnySQLite.swift in Sources */,
 				9B4095FE254139790098DD30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +521,7 @@
 		};
 		9B40960D2541397B0098DD30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C8AA449B0D0743DA54B801 /* Pods-Funny.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -437,6 +545,7 @@
 		};
 		9B40960E2541397B0098DD30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83D85F5E45AFD0CE4F224D5F /* Pods-Funny.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -460,6 +569,7 @@
 		};
 		9B40962C25413B740098DD30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92A0FCE90B69F221D21770F /* Pods-TimeExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
@@ -486,6 +596,7 @@
 		};
 		9B40962D25413B740098DD30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FF3DC6257C32BF75ED3E64 /* Pods-TimeExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;

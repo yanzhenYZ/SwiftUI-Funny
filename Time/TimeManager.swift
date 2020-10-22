@@ -8,6 +8,9 @@
 import WidgetKit
 import YZIPhoneDevice
 
+//Funny Time Manager
+let FTManager = TimeManager.manager
+
 class TimeManager {
     var wifiSubTitle = "0B/s"
     var wifiTitle = "Wifi"

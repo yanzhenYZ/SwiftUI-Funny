@@ -1,6 +1,9 @@
 library/
-.DS_Store
+Podfile.lock
+Pods/
 
+
+.DS_Store
 
 ## User settings
 xcuserdata/

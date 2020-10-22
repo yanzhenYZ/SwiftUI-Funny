@@ -34,7 +34,7 @@ struct PlaceholderView : View {
 
 struct TimeEntry: TimelineEntry {
     let date: Date
-    let manager = TimeManager.manager
+    let manager = FTManager
 }
 
 struct TimeEntryView : View {
