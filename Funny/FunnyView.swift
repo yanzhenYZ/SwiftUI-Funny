@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct FunnyView: View {
+    @State var note = false
     var body: some View {
-        let apps = [("note", "办公"), ("note", "家具"), ("", ""), ("", "")]
+        let apps = [("gifshow", "办公"), ("note", "note"), ("", ""), ("", "")]
         NavigationView {
             ScrollView(.vertical) {
                 LazyHGrid(rows: Array(repeating: GridItem(.fixed(85)), count: 1), spacing: (SCREENW - 240)/5) {
                     ForEach(0..<apps.count) { index in
-                        FunnyAppView(image: apps[index].0, title: apps[index].1)
-                            .frame(width: 60)
+                        NavigationLink(destination: FunnyLinkView(index: index)) {
+                            FunnyAppView(image: apps[index].0, title: apps[index].1)
+                                .frame(width: 60)
+                        }
+                        
                     }
                 }
                 .padding()

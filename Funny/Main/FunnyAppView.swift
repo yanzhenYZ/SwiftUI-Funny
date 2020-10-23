@@ -16,6 +16,7 @@ struct FunnyAppView: View {
                 .cornerRadius(8)
             Spacer()
             Text(title)
+                .foregroundColor(Color.black)
         }
     }
 }

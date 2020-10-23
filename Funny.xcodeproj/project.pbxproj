@@ -29,6 +29,9 @@
 		9B40966D2541898B0098DD30 /* FunnyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40966C2541898B0098DD30 /* FunnyAppView.swift */; };
 		9B40979A254289BC0098DD30 /* Funny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409799254289BC0098DD30 /* Funny.swift */; };
 		9B4097AF2542AEE40098DD30 /* FunnyBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097AE2542AEE40098DD30 /* FunnyBGView.swift */; };
+		9B4097BB2542B53F0098DD30 /* FunnyNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097BA2542B53F0098DD30 /* FunnyNoteView.swift */; };
+		9B4097BF2542B5500098DD30 /* FunnyGifshowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097BE2542B5500098DD30 /* FunnyGifshowView.swift */; };
+		9B4097C92542B9530098DD30 /* FunnyLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097C82542B9530098DD30 /* FunnyLinkView.swift */; };
 		EA246C0E39516C33925850C9 /* Pods_TimeExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,9 @@
 		9B40966C2541898B0098DD30 /* FunnyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyAppView.swift; sourceTree = "<group>"; };
 		9B409799254289BC0098DD30 /* Funny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funny.swift; sourceTree = "<group>"; };
 		9B4097AE2542AEE40098DD30 /* FunnyBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyBGView.swift; sourceTree = "<group>"; };
+		9B4097BA2542B53F0098DD30 /* FunnyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyNoteView.swift; sourceTree = "<group>"; };
+		9B4097BE2542B5500098DD30 /* FunnyGifshowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyGifshowView.swift; sourceTree = "<group>"; };
+		9B4097C82542B9530098DD30 /* FunnyLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyLinkView.swift; sourceTree = "<group>"; };
 		B92A0FCE90B69F221D21770F /* Pods-TimeExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeExtension.debug.xcconfig"; path = "Target Support Files/Pods-TimeExtension/Pods-TimeExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +153,9 @@
 				9B4095FB254139790098DD30 /* AppDelegate.swift */,
 				9B4095FD254139790098DD30 /* SceneDelegate.swift */,
 				9B40964F2541762D0098DD30 /* FunnyView.swift */,
+				9B4097C82542B9530098DD30 /* FunnyLinkView.swift */,
+				9B4097B92542B52F0098DD30 /* Note */,
+				9B4097B82542B5240098DD30 /* Gifshow */,
 				9B40966B2541894A0098DD30 /* Main */,
 				9B40965F254179770098DD30 /* Tools */,
 				9B4096012541397B0098DD30 /* Assets.xcassets */,
@@ -207,6 +216,22 @@
 				9B4097AE2542AEE40098DD30 /* FunnyBGView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		9B4097B82542B5240098DD30 /* Gifshow */ = {
+			isa = PBXGroup;
+			children = (
+				9B4097BE2542B5500098DD30 /* FunnyGifshowView.swift */,
+			);
+			path = Gifshow;
+			sourceTree = "<group>";
+		};
+		9B4097B92542B52F0098DD30 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				9B4097BA2542B53F0098DD30 /* FunnyNoteView.swift */,
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,11 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4097BF2542B5500098DD30 /* FunnyGifshowView.swift in Sources */,
 				9B4095FC254139790098DD30 /* AppDelegate.swift in Sources */,
 				9B40966D2541898B0098DD30 /* FunnyAppView.swift in Sources */,
 				9B40979A254289BC0098DD30 /* Funny.swift in Sources */,
 				9B4096502541762D0098DD30 /* FunnyView.swift in Sources */,
 				9B409661254179A20098DD30 /* FunnyHttp.swift in Sources */,
+				9B4097BB2542B53F0098DD30 /* FunnyNoteView.swift in Sources */,
+				9B4097C92542B9530098DD30 /* FunnyLinkView.swift in Sources */,
 				9B40962725413B740098DD30 /* Time.intentdefinition in Sources */,
 				9B409667254179CB0098DD30 /* FunnySQLite.swift in Sources */,
 				9B4097AF2542AEE40098DD30 /* FunnyBGView.swift in Sources */,
