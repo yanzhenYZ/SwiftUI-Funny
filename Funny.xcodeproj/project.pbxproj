@@ -27,7 +27,7 @@
 		9B409661254179A20098DD30 /* FunnyHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409660254179A20098DD30 /* FunnyHttp.swift */; };
 		9B409667254179CB0098DD30 /* FunnySQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409666254179CB0098DD30 /* FunnySQLite.swift */; };
 		9B40966D2541898B0098DD30 /* FunnyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40966C2541898B0098DD30 /* FunnyAppView.swift */; };
-		9B4096752541942F0098DD30 /* FunnyAppRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4096742541942F0098DD30 /* FunnyAppRowView.swift */; };
+		9B40979A254289BC0098DD30 /* Funny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409799254289BC0098DD30 /* Funny.swift */; };
 		EA246C0E39516C33925850C9 /* Pods_TimeExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +81,7 @@
 		9B409660254179A20098DD30 /* FunnyHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyHttp.swift; sourceTree = "<group>"; };
 		9B409666254179CB0098DD30 /* FunnySQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySQLite.swift; sourceTree = "<group>"; };
 		9B40966C2541898B0098DD30 /* FunnyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyAppView.swift; sourceTree = "<group>"; };
-		9B4096742541942F0098DD30 /* FunnyAppRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyAppRowView.swift; sourceTree = "<group>"; };
+		9B409799254289BC0098DD30 /* Funny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funny.swift; sourceTree = "<group>"; };
 		B92A0FCE90B69F221D21770F /* Pods-TimeExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeExtension.debug.xcconfig"; path = "Target Support Files/Pods-TimeExtension/Pods-TimeExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,6 +193,7 @@
 			children = (
 				9B409660254179A20098DD30 /* FunnyHttp.swift */,
 				9B409666254179CB0098DD30 /* FunnySQLite.swift */,
+				9B409799254289BC0098DD30 /* Funny.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -201,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				9B40966C2541898B0098DD30 /* FunnyAppView.swift */,
-				9B4096742541942F0098DD30 /* FunnyAppRowView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -376,9 +376,9 @@
 			files = (
 				9B4095FC254139790098DD30 /* AppDelegate.swift in Sources */,
 				9B40966D2541898B0098DD30 /* FunnyAppView.swift in Sources */,
+				9B40979A254289BC0098DD30 /* Funny.swift in Sources */,
 				9B4096502541762D0098DD30 /* FunnyView.swift in Sources */,
 				9B409661254179A20098DD30 /* FunnyHttp.swift in Sources */,
-				9B4096752541942F0098DD30 /* FunnyAppRowView.swift in Sources */,
 				9B40962725413B740098DD30 /* Time.intentdefinition in Sources */,
 				9B409667254179CB0098DD30 /* FunnySQLite.swift in Sources */,
 				9B4095FE254139790098DD30 /* SceneDelegate.swift in Sources */,
@@ -547,7 +547,7 @@
 				DEVELOPMENT_TEAM = R57G8CYRFG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Funny/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +571,7 @@
 				DEVELOPMENT_TEAM = R57G8CYRFG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Funny/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct FunnyAppView: View {
+    var image = ""
+    var title = ""
     var body: some View {
         VStack {
-            Image("gifshow")
+            Image(image)
+                .cornerRadius(8)
             Spacer()
-            Text("快手")
+            Text(title)
         }
     }
 }
