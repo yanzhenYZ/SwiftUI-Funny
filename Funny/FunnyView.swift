@@ -15,11 +15,15 @@ struct FunnyView: View {
             ScrollView(.vertical) {
                 LazyHGrid(rows: Array(repeating: GridItem(.fixed(85)), count: 1), spacing: (SCREENW - 240)/5) {
                     ForEach(0..<apps.count) { index in
-                        NavigationLink(destination: FunnyLinkView(index: index)) {
+                        if index < 2 {
+                            NavigationLink(destination: FunnyLinkView(index: index)) {
+                                FunnyAppView(image: apps[index].0, title: apps[index].1)
+                                    .frame(width: 60)
+                            }
+                        } else {
                             FunnyAppView(image: apps[index].0, title: apps[index].1)
                                 .frame(width: 60)
                         }
-                        
                     }
                 }
                 .padding()
