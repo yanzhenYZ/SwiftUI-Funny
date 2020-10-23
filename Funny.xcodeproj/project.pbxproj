@@ -25,13 +25,15 @@
 		9B40963E25416C790098DD30 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40963D25416C790098DD30 /* TimeManager.swift */; };
 		9B4096502541762D0098DD30 /* FunnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40964F2541762D0098DD30 /* FunnyView.swift */; };
 		9B409661254179A20098DD30 /* FunnyHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409660254179A20098DD30 /* FunnyHttp.swift */; };
-		9B409667254179CB0098DD30 /* FunnySQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409666254179CB0098DD30 /* FunnySQLite.swift */; };
 		9B40966D2541898B0098DD30 /* FunnyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40966C2541898B0098DD30 /* FunnyAppView.swift */; };
 		9B40979A254289BC0098DD30 /* Funny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409799254289BC0098DD30 /* Funny.swift */; };
 		9B4097AF2542AEE40098DD30 /* FunnyBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097AE2542AEE40098DD30 /* FunnyBGView.swift */; };
 		9B4097BB2542B53F0098DD30 /* FunnyNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097BA2542B53F0098DD30 /* FunnyNoteView.swift */; };
 		9B4097BF2542B5500098DD30 /* FunnyGifshowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097BE2542B5500098DD30 /* FunnyGifshowView.swift */; };
 		9B4097C92542B9530098DD30 /* FunnyLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4097C82542B9530098DD30 /* FunnyLinkView.swift */; };
+		9B40983F2542D7720098DD30 /* FunnyNoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40983E2542D7720098DD30 /* FunnyNoteManager.swift */; };
+		9B4098452542D9DA0098DD30 /* FunnyNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4098442542D9DA0098DD30 /* FunnyNote.swift */; };
+		9B4098492542DE780098DD30 /* FunnyNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4098482542DE780098DD30 /* FunnyNoteCell.swift */; };
 		EA246C0E39516C33925850C9 /* Pods_TimeExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,13 +85,15 @@
 		9B40963D25416C790098DD30 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		9B40964F2541762D0098DD30 /* FunnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyView.swift; sourceTree = "<group>"; };
 		9B409660254179A20098DD30 /* FunnyHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyHttp.swift; sourceTree = "<group>"; };
-		9B409666254179CB0098DD30 /* FunnySQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySQLite.swift; sourceTree = "<group>"; };
 		9B40966C2541898B0098DD30 /* FunnyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyAppView.swift; sourceTree = "<group>"; };
 		9B409799254289BC0098DD30 /* Funny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funny.swift; sourceTree = "<group>"; };
 		9B4097AE2542AEE40098DD30 /* FunnyBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyBGView.swift; sourceTree = "<group>"; };
 		9B4097BA2542B53F0098DD30 /* FunnyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyNoteView.swift; sourceTree = "<group>"; };
 		9B4097BE2542B5500098DD30 /* FunnyGifshowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyGifshowView.swift; sourceTree = "<group>"; };
 		9B4097C82542B9530098DD30 /* FunnyLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyLinkView.swift; sourceTree = "<group>"; };
+		9B40983E2542D7720098DD30 /* FunnyNoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyNoteManager.swift; sourceTree = "<group>"; };
+		9B4098442542D9DA0098DD30 /* FunnyNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyNote.swift; sourceTree = "<group>"; };
+		9B4098482542DE780098DD30 /* FunnyNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyNoteCell.swift; sourceTree = "<group>"; };
 		B92A0FCE90B69F221D21770F /* Pods-TimeExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeExtension.debug.xcconfig"; path = "Target Support Files/Pods-TimeExtension/Pods-TimeExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BC7FE65E48F3B5940F37E01C /* Pods_TimeExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -203,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				9B409660254179A20098DD30 /* FunnyHttp.swift */,
-				9B409666254179CB0098DD30 /* FunnySQLite.swift */,
 				9B409799254289BC0098DD30 /* Funny.swift */,
 			);
 			path = Tools;
@@ -230,6 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				9B4097BA2542B53F0098DD30 /* FunnyNoteView.swift */,
+				9B4098482542DE780098DD30 /* FunnyNoteCell.swift */,
+				9B40983E2542D7720098DD30 /* FunnyNoteManager.swift */,
+				9B4098442542D9DA0098DD30 /* FunnyNote.swift */,
 			);
 			path = Note;
 			sourceTree = "<group>";
@@ -406,14 +412,16 @@
 				9B4095FC254139790098DD30 /* AppDelegate.swift in Sources */,
 				9B40966D2541898B0098DD30 /* FunnyAppView.swift in Sources */,
 				9B40979A254289BC0098DD30 /* Funny.swift in Sources */,
+				9B40983F2542D7720098DD30 /* FunnyNoteManager.swift in Sources */,
 				9B4096502541762D0098DD30 /* FunnyView.swift in Sources */,
 				9B409661254179A20098DD30 /* FunnyHttp.swift in Sources */,
 				9B4097BB2542B53F0098DD30 /* FunnyNoteView.swift in Sources */,
 				9B4097C92542B9530098DD30 /* FunnyLinkView.swift in Sources */,
 				9B40962725413B740098DD30 /* Time.intentdefinition in Sources */,
-				9B409667254179CB0098DD30 /* FunnySQLite.swift in Sources */,
+				9B4098492542DE780098DD30 /* FunnyNoteCell.swift in Sources */,
 				9B4097AF2542AEE40098DD30 /* FunnyBGView.swift in Sources */,
 				9B4095FE254139790098DD30 /* SceneDelegate.swift in Sources */,
+				9B4098452542D9DA0098DD30 /* FunnyNote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
