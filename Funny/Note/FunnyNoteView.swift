@@ -16,7 +16,7 @@ struct FunnyNoteView: View {
             ScrollView(.vertical) {
                 LazyHGrid(rows: Array(repeating: GridItem(.fixed(170)), count: 1), spacing: 5) {
                     ForEach(0..<notes.count) { index in
-                        NavigationLink(destination: FunnyNoteEditView(isActive: $isActive), isActive: $isActive) {
+                        NavigationLink(destination: FunnyNoteEditView(isActive: $isActive, note: notes[index]), isActive: $isActive) {
                             FunnyNoteCell(note: notes[index])
                                 .frame(width: (SCREENW - 15)/2)
                         }
