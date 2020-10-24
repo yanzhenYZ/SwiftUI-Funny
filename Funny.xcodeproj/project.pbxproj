@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		64BCB23F3C100191BC84341D /* Pods_Funny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B709E00195ACB70F3B0379 /* Pods_Funny.framework */; };
+		9B08D5BC2543DAE500A36B91 /* FunnyNoteEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08D5BB2543DAE500A36B91 /* FunnyNoteEditView.swift */; };
+		9B08D5E62544071400A36B91 /* FunnyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08D5E52544071400A36B91 /* FunnyExtension.swift */; };
 		9B4095FC254139790098DD30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4095FB254139790098DD30 /* AppDelegate.swift */; };
 		9B4095FE254139790098DD30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4095FD254139790098DD30 /* SceneDelegate.swift */; };
 		9B4096022541397B0098DD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4096012541397B0098DD30 /* Assets.xcassets */; };
@@ -66,6 +68,8 @@
 		51FF3DC6257C32BF75ED3E64 /* Pods-TimeExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeExtension.release.xcconfig"; path = "Target Support Files/Pods-TimeExtension/Pods-TimeExtension.release.xcconfig"; sourceTree = "<group>"; };
 		58B709E00195ACB70F3B0379 /* Pods_Funny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Funny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D85F5E45AFD0CE4F224D5F /* Pods-Funny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Funny.release.xcconfig"; path = "Target Support Files/Pods-Funny/Pods-Funny.release.xcconfig"; sourceTree = "<group>"; };
+		9B08D5BB2543DAE500A36B91 /* FunnyNoteEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyNoteEditView.swift; sourceTree = "<group>"; };
+		9B08D5E52544071400A36B91 /* FunnyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyExtension.swift; sourceTree = "<group>"; };
 		9B4095F8254139790098DD30 /* Funny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Funny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4095FB254139790098DD30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B4095FD254139790098DD30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 			children = (
 				9B409660254179A20098DD30 /* FunnyHttp.swift */,
 				9B409799254289BC0098DD30 /* Funny.swift */,
+				9B08D5E52544071400A36B91 /* FunnyExtension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				9B4097BA2542B53F0098DD30 /* FunnyNoteView.swift */,
+				9B08D5BB2543DAE500A36B91 /* FunnyNoteEditView.swift */,
 				9B4098482542DE780098DD30 /* FunnyNoteCell.swift */,
 				9B40983E2542D7720098DD30 /* FunnyNoteManager.swift */,
 				9B4098442542D9DA0098DD30 /* FunnyNote.swift */,
@@ -419,6 +425,8 @@
 				9B4097C92542B9530098DD30 /* FunnyLinkView.swift in Sources */,
 				9B40962725413B740098DD30 /* Time.intentdefinition in Sources */,
 				9B4098492542DE780098DD30 /* FunnyNoteCell.swift in Sources */,
+				9B08D5BC2543DAE500A36B91 /* FunnyNoteEditView.swift in Sources */,
+				9B08D5E62544071400A36B91 /* FunnyExtension.swift in Sources */,
 				9B4097AF2542AEE40098DD30 /* FunnyBGView.swift in Sources */,
 				9B4095FE254139790098DD30 /* SceneDelegate.swift in Sources */,
 				9B4098452542D9DA0098DD30 /* FunnyNote.swift in Sources */,
